@@ -1,0 +1,25 @@
+.Writings{
+    margin-top: 60px;
+}
+.Writings ul {
+    list-style-type: none;
+    margin-left: 0;
+    margin-top: 15spx;
+  }
+  
+  .Writings ul li {
+    margin-bottom: 8px;
+  }
+  .Writings ul li a:hover {
+    border-bottom: 1px solid grey;
+  }
+  
+  .Writings ul li a {
+      color: #000000;
+  }
+
+  .Loop-Date {
+    margin-left: 10px;
+    font-size: 0.8em;
+    color: #a7a7a7;
+  }

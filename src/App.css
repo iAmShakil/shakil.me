@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/Proxima Nova Alt Regular-webfont.eot');
+  src: url('./assets/fonts/Proxima Nova Alt Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./assets/fonts/Proxima Nova Alt Regular-webfont.woff') format('woff'),
+       url('./assets/fonts/Proxima Nova Alt Regular-webfont.ttf') format('truetype'),
+       url('./assets/fonts/Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'proxima_nova_ltsemibold';
+  src: url('./assets/fonts/Proxima Nova Semibold-webfont.eot');
+  src: url('./assets/fonts/Proxima Nova Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./assets/fonts/Proxima Nova Semibold-webfont.woff2') format('woff2'),
+       url('./assets/fonts/Proxima Nova Semibold-webfont.ttf') format('truetype'),
+       url('./assets/fonts/Proxima Nova Semibold-webfont.svg#proxima_nova_ltsemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(0, 172, 0);
+}
+a:hover, a:focus{
+  color: rgb(88, 88, 88);
+}
+
+h2{
+  font-size: 1.6em;
+  font-family: 'proxima_nova_ltsemibold', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  font-size: 1.1em;
+  font-family: 'Proxima Nova', Verdana, Geneva, Tahoma, sans-serif;
+}
+.App{
+  margin-top: 25px;
+}

@@ -1,0 +1,21 @@
+.Hero {
+    margin-top: 70px;
+    max-width: 630px;
+  }
+
+  .Hero-Greet{
+    margin-bottom: 15px;
+  }
+
+.Hero-Intro{
+  font-size: 1.8em;
+  font-family: 'proxima_nova_altblack', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.Hero-Second {
+    padding-top: 20px;
+}
+span.Keyword {
+  background: #def9de;
+}

@@ -1,0 +1,11 @@
+
+.Nav-Left{
+    float: left;
+    color: #979797;
+}
+.Nav-Right{
+    float: right;
+}
+.logo{
+    max-width: 150px;
+}

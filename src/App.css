@@ -42,3 +42,8 @@ body{
 .App{
   margin-top: 25px;
 }
+
+/* helper classes */
+span.Keyword {
+  background: #def9de;
+}

@@ -1,0 +1,14 @@
+form {
+    max-width: 600px;
+    margin-top: 40px;
+}
+
+.button{
+    
+color: #fff;
+border: 0;
+padding: 5px 17px;
+cursor: pointer;
+text-transform: uppercase;
+border-radius: 2px;
+letter-spacing: 0.4px;}

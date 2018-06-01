@@ -1,0 +1,21 @@
+.First-Photo, .Second-Photo {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+.First-Para{
+    margin-left: 100px;
+    margin-right: 50px;
+}
+.Second-Para{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.Flex-Center-Align{
+    display: flex;
+    align-items: center;
+}
+.Second-Row{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}

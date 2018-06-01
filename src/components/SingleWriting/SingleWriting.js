@@ -1,14 +1,15 @@
-import React, {Component} from 'react';
-import ArticleLink from './ArticleLink';
+import React, { Component } from 'react';
+import './SingleWriting.css';
 import axios from 'axios';
 
-class ArticleLoop extends Component{
-
+class SingleWriting extends Component {
     constructor(props){
         super(props);
         this.formateDate = this.formateDate.bind(this);
         this.state = {
-            postData: [],
+            title : '',
+            content: '',
+            date: '',
         }
     }
 
@@ -62,29 +63,33 @@ class ArticleLoop extends Component{
     }
 
     componentDidMount(){
-        axios(`http://shakil.me/blog/wp-json/wp/v2/posts`)
+        axios(`http://shakil.me/blog/wp-json/wp/v2/posts?slug=${this.props.match.params.slug}`)
         .then((response) => {
+            console.log(response);
+            const title = response.data["0"].title.rendered;
+            const content = response.data["0"].content.rendered;
+            const date = response.data["0"].modified;
+            const formattedDate = this.formateDate(date);
             this.setState({
-                postData: response.data,
+                title: title,
+                content: content,
+                date: formattedDate
             });
-            console.log(this.state.postData);
         })
         .catch((err) => {
             console.log(err);
         } );
     }
-    render(){
+
+    render () {
         return (
-            <div>
-                <ul>
-                    {
-                        this.state.postData.map( (data) => { 
-                            return <li key={data.slug}><ArticleLink link={`/blog/${data.slug}`} text={data.title.rendered} /><span className="Loop-Date">{this.formateDate(data.date)}</span></li>                            
-                        })
-                    }
-               </ul>
+            <div className="Single-Content">
+              <h1 className="Post-Title">{this.state.title}</h1>
+              <div className="Post-Date">{this.state.date}</div>
+              <div className="Post-Content" dangerouslySetInnerHTML={ {__html:this.state.content} } ></div>  
             </div>
         )
     }
 }
-export default ArticleLoop;
+
+export default SingleWriting;

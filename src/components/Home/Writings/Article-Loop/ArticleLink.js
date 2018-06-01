@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 const ArticleLink = (props) => {
     return (
-        <div>
-            {props.name ? props.name : 'something'}
-        </div>
+        <Link to={props.link}> {props.text} </Link>
     )
 }
 

@@ -1,0 +1,14 @@
+.Book {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .Caption {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .Caption h6 {
+    font-weight: bold;
+    color: grey;
+  }

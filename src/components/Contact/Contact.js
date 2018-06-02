@@ -40,7 +40,24 @@ class Contact extends Component {
     handleSubmit = (event) => {
 
         event.preventDefault();
-        // creating a new form data to send    
+        // creating a new form data to send
+        axios({
+            method : 'post',
+            url: 'https://shakil.me/blog/wp-admin/admin-ajax.php',
+            data: {
+                action : 'send_email',
+                name : this.state.name,
+                email: this.state.email,
+                message: this.state.message
+            }
+        })
+        .then( (response) => {
+            console.log(response);
+        } )
+
+        .catch( (err) => {
+            console.log(err);
+        } );
 
     }
 

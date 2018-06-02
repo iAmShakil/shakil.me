@@ -10,3 +10,9 @@
 .Nav-List {
     list-style-type: none;
   }
+
+  .Nav-Right .active {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #6f6f6f;
+    color: #6f6f6f;
+  }

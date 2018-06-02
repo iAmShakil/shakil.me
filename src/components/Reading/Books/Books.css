@@ -9,6 +9,33 @@
   }
   
   .Caption h6 {
-    font-weight: bold;
-    color: grey;
+    color: rgb(2, 175, 2);
   }
+  .Book a {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .Book img {
+    width: 180px;
+    overflow: hidden;
+  }
+
+  /* star rating */
+
+  .rating-static {
+    margin: 0 auto;
+    width: 60px;
+    height: 16px;
+    display: block;
+    background: url('../../../assets/images/star-rating.png') 0 0 no-repeat;
+  }
+
+  .rating-5 { background-position: 0 0; }
+  .rating-4 { background-position: -12px 0; } 
+  .rating-3 { background-position: -24px 0; }
+  .rating-2 { background-position: -36px 0; }
+  .rating-1 { background-position: -48px 0; }
+  .rating-0 { background-position: -60px 0; }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Book = (props) => {
     return (
-        <div className="Book cell medium-3">
+        <div className="Book cell medium-3 small-6">
             <div className="Book-Wrapper">
             <a href={props.link} target="_blank">
             <img src={props.imageUrl} alt={props.title}/>

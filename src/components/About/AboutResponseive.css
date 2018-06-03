@@ -1,0 +1,19 @@
+@media screen and (max-width: 1023px){
+
+    .First-Row img, .Second-Row img{
+        margin-bottom: 20px;
+    }
+    .First-Row, .Second-Row {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+    .First-Row{
+        margin-bottom: 90px;
+    }
+    .Second-Row .cell:first-child{
+        order: 2;
+    }
+    .Second-Row .cell:nth-child(2){
+        order: 1;
+    }
+}

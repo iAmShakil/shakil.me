@@ -1,11 +1,17 @@
-.First-Photo, .Second-Photo {
+@media screen and (min-width: 1024px){
+.First-Photo {
     margin-left: 100px;
     margin-right: 100px;
   }
-
+.Second-Photo{
+    margin-left: 8%;
+    margin-right: 60px;
+}
 .First-Para{
-    margin-left: 100px;
-    margin-right: 50px;
+    /* margin-left: 100px;
+    margin-right: 50px; */
+    margin-left: 8%;
+    margin-right: 60px;
 }
 .Second-Para{
     margin-right: 100px;
@@ -18,4 +24,5 @@
 .Second-Row{
     margin-top: 100px;
     margin-bottom: 100px;
+}
 }

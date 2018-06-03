@@ -8,8 +8,8 @@ class Home extends Component{
         return(
             <div>
                 <Header />
-                <Projects />
-                <Writings />
+                {/* <Projects /> */}
+                <Writings/>
             </div>
         )
     }

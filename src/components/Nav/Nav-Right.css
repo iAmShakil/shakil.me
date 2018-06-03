@@ -1,4 +1,14 @@
-.Nav-List li {
+.Mobile-Nav-Icon{
+  display: none;
+}
+.Nav-Right-Mobile{
+  display: none;
+}
+
+.Nav-Right {
+  width: auto !important;
+}
+.Nav-Right .Nav-List li {
     display: inline-block;
     margin-left: 35px;
   }
@@ -15,4 +25,67 @@
     padding-bottom: 10px;
     border-bottom: 2px solid #6f6f6f;
     color: #6f6f6f;
+  }
+
+  .Nav-Close-Icon{
+    display: none;
+  }
+
+  @media screen and ( max-width: 768px){
+    /* mobile menu */
+    .Nav-Right{
+      display: none;
+    }
+    .Mobile-Nav-Icon{
+      display: block;
+      cursor: pointer;
+    }
+    .Mobile-Nav-Icon:hover span, .Mobile-Nav-Icon:focus span{
+      background-color: black;
+    }
+    .Mobile-Nav-Icon span{
+      display: block;
+      width: 34px;
+      height: 5px;
+      background-color: grey;
+      margin: 5px 0;
+    }
+    .Nav-List{
+      list-style-type: none;
+      margin-left: 0;
+      font-weight: bold;
+    }
+    .Nav-Close-Icon {
+      display: block;
+      right: 32px;
+      top: 26px;
+      position: absolute;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .Nav-Right-Mobile {
+      position: fixed;
+      height: 100%;
+      width: 300px;
+      top: 0;
+      right: -300px;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.9);
+      color: white;
+      transition: 0.5s;
+    }
+    .Nav-Right-Mobile ul li {
+      margin: 27px 0;
+      font-size: 2em;
+    }
+    
+    .Nav-Right-Mobile ul li a {
+      font-weight: bold;
+    }
+    .Nav-Right-Mobile ul li a.active{
+      color: rgb(100, 100, 100);
+    }
   }

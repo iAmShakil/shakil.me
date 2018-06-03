@@ -1,21 +1,41 @@
 footer{
     margin-top: 60px;
-}
-
-.Footer-Left{
-    float: left;
-}
-.Footer-Right{
-    float: right;
-}
+    display: flex !important;
+    justify-content: space-between;
+  }
+ 
+  .Footer-Right {
+    margin-left: auto;
+  }
 
 .Footer-Right ul{
     list-style-type: none;
-    padding-left: 0;
+    margin-left: 0;
 }
 .Footer-Right ul li{
     display: inline-block;
     margin-left: 20px;
     width: 20px;
     height: 20px;
+}
+.Footer-Right ul li a{
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        flex-direction: column;
+    }
+    footer div{
+        margin : 0 auto;
+    }
+    .Footer-Right{
+        order: 1;
+    }
+    .Footer-Left{
+        order: 2;
+    }
+    .Footer-Right ul li:first-child{
+        margin-left: 0;
+    }
 }

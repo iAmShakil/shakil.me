@@ -1,9 +1,11 @@
-
+.Header{
+    margin-bottom: 100px;
+}
 .Nav-Left{
     float: left;
     color: #979797;
 }
-.Nav-Right{
+.Nav-Float-Right{
     float: right;
 }
 .logo{

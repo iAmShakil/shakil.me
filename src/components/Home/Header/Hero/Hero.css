@@ -4,11 +4,13 @@
 
   .Hero-Greet{
     margin-bottom: 15px;
+    font-family: 'NeuzeitS LT Book',Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
   }
 
 .Hero-Intro{
   font-size: 1.8em;
-  font-family: 'proxima_nova_altblack', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Neuzeit Grotesk W01 Regular', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 

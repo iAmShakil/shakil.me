@@ -1,6 +1,12 @@
 .Writings{
     margin-top: 60px;
 }
+
+.Writings-Heading{
+  font-family: 'NeuzeitS LT Book',Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35px;
+}
+
 .Writings ul {
     list-style-type: none;
     margin-left: 0;
@@ -11,11 +17,12 @@
     margin-bottom: 8px;
   }
   .Writings ul li a:hover {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(44, 44, 44);
   }
   
   .Writings ul li a {
-      color: #000000;
+      color: rgb(44, 44, 44);
+      padding-bottom: 2px;
   }
 
   .Loop-Date {

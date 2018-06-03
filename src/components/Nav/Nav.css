@@ -1,3 +1,10 @@
 .Nav-Bar{
     margin-bottom: 100px;
 }
+.Nav-Left div span {
+    display: inline-block;
+    padding: 5px 10px;
+    background: black;
+    color: white;
+    margin-right: 1px;
+  }

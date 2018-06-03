@@ -3,12 +3,10 @@ form {
     margin-top: 40px;
 }
 
-.button{
-    
-color: #fff;
-border: 0;
-padding: 5px 17px;
-cursor: pointer;
-text-transform: uppercase;
-border-radius: 2px;
-letter-spacing: 0.4px;}
+.button{   
+letter-spacing: 0.4px;
+background-color: rgb(29, 29, 29) !important;
+}
+.button:hover, .button:focus{
+    background-color: black !important;
+}

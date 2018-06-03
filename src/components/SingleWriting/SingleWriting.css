@@ -7,3 +7,9 @@
     color: #868686;
     margin-bottom: 40px;
   }
+
+  h1.Post-Title{
+    font-family: 'NeuzeitS LT Book', Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-weight: 800;
+  }

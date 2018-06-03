@@ -10,17 +10,17 @@ const FooterRight = () => {
     return (
         <div className="Footer-Right">
             <ul>
-                <li><a href="/"> <img src={github} /> </a></li>
+                <li><a href="https://github.com/iAmShakil/" target="_blank"> <img src={github} /> </a></li>
 
-                <li><a href="/"> <img src={linkedin} /> </a></li>
+                <li><a href="https://www.linkedin.com/in/shakil-ahmed-53305aaa/" target="_blank"> <img src={linkedin} /> </a></li>
 
-                <li><a href="/"> <img src={wordpress} /> </a></li>                
+                <li><a href="https://jashakil.wordpress.com" target="_blank"> <img src={wordpress} /> </a></li>                
 
-                <li><a href="/"> <img src={twitter} /> </a></li>
+                <li><a href="https://twitter.com/maverickshak" target="_blank"> <img src={twitter} /> </a></li>
 
-                <li><a href="/"> <img src={fb} /> </a> </li>
+                <li><a href="https://facebook.com/imskl" target="_blank"> <img src={fb} /> </a> </li>
 
-                <li><a href="/"> <img src={mailer} /> </a></li>
+                <li><a href="mailto:hi@shakil.me" target="_blank"> <img src={mailer} /> </a></li>
             </ul>
         </div>
     )

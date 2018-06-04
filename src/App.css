@@ -61,6 +61,6 @@ span.Keyword {
 
 @media screen and (max-width: 768px){
   .App{
-    margin-top: 10px;
+    padding-top: 10px;
   }
 }

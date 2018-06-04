@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import './Hero.css';
 
 class Hero extends Component{
@@ -11,8 +12,7 @@ class Hero extends Component{
                 <div className="Hero-Intro">
                 I'm Shakil Ahmed, a Full-stack web developer and a UX designer.</div>
             <div className="Hero-Second">
-                I'm proficient in <span className="Keyword">WordPress</span>, <span className="Keyword">JavaScript</span>, <span className="Keyword">ReactJs</span>, <span className="Keyword">React Native</span>, <span className="Keyword">NodeJs</span>, <span className="Keyword">PHP</span>. I love learning new technologies and usually 
-                prefer working on challenging projects. Send me an email.
+                I'm proficient in <span className="Keyword">JavaScript</span>, <span className="Keyword">ReactJs</span>, <span className="Keyword">React Native</span>, <span className="Keyword">NodeJs</span>, <span className="Keyword">WordPress</span>, and <span className="Keyword">PHP</span>. As someone who loves solving problems, I usually prefer working on challenging projects. For anything, <Link to="/contact">send me an email</Link>.
             </div>
             </div>
         )

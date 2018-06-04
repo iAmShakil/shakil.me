@@ -12,7 +12,7 @@ class Form extends Component {
                     <input onChange={this.props.handleChange} type="email" placeholder="Email" name="email"/>
                     <label htmlFor="Message">Message</label>
                     <textarea onChange={this.props.handleChange} name="message" placeholder="Your message..." cols="30" rows="7"></textarea>
-                    <input className="button" type="submit" value="Submit"/>
+                    <input className="button" type="submit" value="SUBMIT"/>
                 </form>                
             </div>
         )

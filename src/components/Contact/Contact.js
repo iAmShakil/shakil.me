@@ -48,13 +48,9 @@ class Contact extends Component {
         // creating a new form data to send
         axios({
             method : 'post',
-            url: 'https://shakil.me/blog/wp-admin/admin-ajax.php',
-            data: {
-                action : 'send_email',
-                name : this.state.name,
-                email: this.state.email,
-                message: this.state.message
-            }
+            url: '/',
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            data: `form-name=contact&name=${this.state.name}&email=${this.state.email}&message=${this.state.message}`,
         })
         .then( (response) => {
             console.log(response);

@@ -4,6 +4,9 @@ import Projects from './projects/Projects';
 import Writings from './Writings/Writings';
 
 class Home extends Component{
+    componentWillMount() {
+        document.title = 'Shakil Ahmed - Web Developer';
+      }
     render(){
         return(
             <div>

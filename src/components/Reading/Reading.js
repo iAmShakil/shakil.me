@@ -3,6 +3,9 @@ import BookLoop from './Books/BooksLoop';
 import './Reading.css';
 
 class Reading extends Component {
+    componentWillMount() {
+        document.title = 'Reading - Shakil Ahmed';
+      }
     render () {
         return (
             <div className="Reading-Wrapper">

@@ -5,6 +5,9 @@ import './About.css';
 import './AboutResponseive.css';
 
 class About extends Component {
+    componentWillMount() {
+        document.title = 'About - Shakil Ahmed';
+      }
     render () {
         return (
             <div>

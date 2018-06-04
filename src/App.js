@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
+import ReactGA from 'react-ga';
 import Nav from './components/Nav/Nav';
 import Home from './components/Home/Home';
 import Writings from './components/Writings/Writings';
@@ -12,7 +13,11 @@ import './Foundation.css';
 import './App.css';
 
 class App extends Component {
+
   render() {
+    ReactGA.initialize('UA-120308567-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    
     return (
       <Router>
       <div className="App grid-container">

@@ -16,6 +16,11 @@ class Contact extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
 
     }
+
+    componentWillMount() {
+        document.title = 'Contact - Shakil Ahmed';
+      }
+
     handleChange = (event) => {
         const name = event.target.name;
         const value = event.target.checked? event.target.checked : event.target.value;

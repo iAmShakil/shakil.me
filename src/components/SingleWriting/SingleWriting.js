@@ -63,13 +63,14 @@ class SingleWriting extends Component {
     }
 
     componentDidMount(){
-        axios(`http://shakil.me/blog/wp-json/wp/v2/posts?slug=${this.props.match.params.slug}`)
+        axios(`https://shakil.me/blog/wp-json/wp/v2/posts?slug=${this.props.match.params.slug}`)
         .then((response) => {
             console.log(response);
             const title = response.data["0"].title.rendered;
             const content = response.data["0"].content.rendered;
             const date = response.data["0"].modified;
             const formattedDate = this.formateDate(date);
+            document.title = title;
             this.setState({
                 title: title,
                 content: content,

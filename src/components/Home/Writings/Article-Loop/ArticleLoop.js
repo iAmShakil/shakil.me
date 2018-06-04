@@ -62,7 +62,7 @@ class ArticleLoop extends Component{
     }
 
     componentDidMount(){
-        axios(`http://shakil.me/blog/wp-json/wp/v2/posts`)
+        axios(`https://shakil.me/blog/wp-json/wp/v2/posts`)
         .then((response) => {
             this.setState({
                 postData: response.data,

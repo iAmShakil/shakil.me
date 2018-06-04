@@ -24,6 +24,14 @@ a:hover, a:focus{
   color: rgb(88, 88, 88);
 }
 
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+  box-shadow: none;
+  border: 1px solid black;
+}
+[type='text']:focus,[type='email']:focus,textarea:focus{
+  box-shadow: none;
+  border: 1px solid black;
+}
 h2{
   font-size: 1.6em;
   font-family: 'NeuzeitS LT Book', Verdana, Geneva, Tahoma, sans-serif;
@@ -43,4 +51,13 @@ body{
 /* helper classes */
 span.Keyword {
   background: #def9de;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 768px){
+  .App{
+    margin-top: 10px;
+  }
 }

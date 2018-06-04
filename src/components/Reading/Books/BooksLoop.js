@@ -3,6 +3,7 @@ import axios from 'axios';
 import xmljs from 'xml-js';
 import Book from './Book';
 import './Books.css';
+import LoaderAnimation from '../../Utils/Loader';
 
 class BooksLoop extends Component {
 
@@ -33,8 +34,10 @@ class BooksLoop extends Component {
  }
 
   render() {
+    const Animation = this.state.books.length < 1 ? ( <LoaderAnimation /> ) : ('');
     return (
       <div className="grid-x">
+          {Animation}
           {
               this.state.books.map( (element) => {
                   return <Book key={element.book.link._text} rating={element.rating._text} link={element.book.link._text} imageUrl={element.book.image_url._text} title={element.book.title._text} author={element.book.authors.author.name._text} />

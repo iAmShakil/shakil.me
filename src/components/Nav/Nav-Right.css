@@ -67,6 +67,7 @@
       position: fixed;
       height: 100%;
       width: 300px;
+      max-width: 100%;
       top: 0;
       right: -300px;
       z-index: 1;

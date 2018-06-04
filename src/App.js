@@ -18,12 +18,14 @@ class App extends Component {
       <div className="App grid-container">
       {/* passing down the NavLink to NavRight through Nav */}
       <Nav />
+      <div style={ {flex: 1,} }>
       <Route exact path="/" component= {Home} />
       <Route path="/writings" component= {Writings} />
       <Route path="/blog/:slug" component= {SingleWriting} />           
       <Route path="/reading" component= {Reading} />
       <Route path="/about" component= {About} />      
-      <Route path="/contact" component= {Contact} />      
+      <Route path="/contact" component= {Contact} />
+      </div>
       <Footer />
       </div>
       </Router>

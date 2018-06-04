@@ -45,7 +45,10 @@ body{
   font-family: 'Neuzeit Grotesk W01 Regular', Verdana, Geneva, Tahoma, sans-serif;
 }
 .App{
-  margin-top: 25px;
+  padding-top: 25px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* helper classes */

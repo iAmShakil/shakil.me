@@ -15,7 +15,7 @@ class BooksLoop extends Component {
     }
 
   componentDidMount(){
-    axios.get("http://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list?v=2&id=82635036-shakil-ahmed&key=7nfXKb2LSamkuU1M1Nimyg&shelf=read")
+    axios.get("https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list?v=2&id=82635036-shakil-ahmed&key=7nfXKb2LSamkuU1M1Nimyg&shelf=read")
     .then(
         (response) => {
             var converted = xmljs.xml2js(response.data,{compact: true, spaces: 4});

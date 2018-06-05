@@ -32,6 +32,7 @@ a:hover, a:focus{
   box-shadow: none;
   border: 1px solid black;
 }
+
 h2{
   font-size: 1.6em;
   font-family: 'NeuzeitS LT Book', Verdana, Geneva, Tahoma, sans-serif;
@@ -62,5 +63,10 @@ span.Keyword {
 @media screen and (max-width: 768px){
   .App{
     padding-top: 10px;
+  }
+}
+@media screen and (max-width: 39em){
+  h1{
+    font-size: 2rem;
   }
 }

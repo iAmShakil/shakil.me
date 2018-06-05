@@ -24,7 +24,7 @@ class App extends Component {
       <Nav />
       <div style={ {flex: 1,} }>
       <Route exact path="/" component= {Home} />
-      <Route path="/blog" component= {Writing} />
+      <Route path="/writing" component= {Writing} />
       <Route path="/blog/:slug" component= {SingleWriting} />           
       <Route path="/reading" component= {Reading} />
       <Route path="/about" component= {About} />      

@@ -9,9 +9,9 @@ class Form extends Component {
                     <label htmlFor="Name">Name</label>
                     <input onChange={this.props.handleChange} type="text" name="name" placeholder="Name" value={this.props.data.name}/>
                     <label htmlFor="Email">Email</label>
-                    <input onChange={this.props.handleChange} type="email" placeholder="Email" name="email"/>
+                    <input onChange={this.props.handleChange} type="email" placeholder="Email" name="email" value={this.props.data.email} />
                     <label htmlFor="Message">Message</label>
-                    <textarea onChange={this.props.handleChange} name="message" placeholder="Your message..." cols="30" rows="7"></textarea>
+                    <textarea onChange={this.props.handleChange} name="message" placeholder="Your message..." cols="30" rows="7" value={this.props.data.message}></textarea>
                     <input className="button" type="submit" value="SUBMIT"/>
                 </form>                
             </div>

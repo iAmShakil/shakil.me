@@ -63,7 +63,7 @@ class SingleWriting extends Component {
     }
 
     componentDidMount(){
-        axios(`https://shakil.me/blog/wp-json/wp/v2/posts?slug=${this.props.match.params.slug}`)
+        axios(`https://blog.shakil.me/wp-json/wp/v2/posts?slug=${this.props.match.params.slug}`)
         .then((response) => {
             console.log(response);
             const title = response.data["0"].title.rendered;

@@ -21,7 +21,6 @@ class App extends Component {
     return (
       <Router>
       <div className="App grid-container">
-      {/* passing down the NavLink to NavRight through Nav */}
       <Nav />
       <div style={ {flex: 1,} }>
       <Route exact path="/" component= {Home} />
@@ -32,7 +31,7 @@ class App extends Component {
       <Route path="/contact" component= {Contact} />
       </div>
       <Footer />
-      </div>
+      </div>    
       </Router>
     );
   }

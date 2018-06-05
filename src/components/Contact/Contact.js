@@ -50,14 +50,19 @@ class Contact extends Component {
             method : 'post',
             url: '/',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            data: `form-name=contact&name=${this.state.name}&email=${this.state.email}&message=${this.state.message}`,
+            data: `form-name=contact&name=${encodeURIComponent(this.state.name)}&email=${encodeURIComponent(this.state.email)}&message=${encodeURIComponent(this.state.message)}`,
         })
-        .then( (response) => {
-            console.log(response);
+        .then( () => {
+            alert("Message successfully sent!");
+            this.setState({
+                name: '',
+                email: '',
+                message: '',
+            });
         } )
 
         .catch( (err) => {
-            console.log(err);
+            alert("Error");
         } );
 
     }

@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../assets/images/logo-bold.png';
 
 const NavLeft = (props) => {
     return (

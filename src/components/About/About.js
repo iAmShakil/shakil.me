@@ -14,7 +14,7 @@ class About extends Component {
 
             <div className="First-Row">
                 <div className="grid-x">
-                    <div className="cell large-6 medium-12 Flex-Center-Align"> <div className="First-Photo"><img src={BrickPhoto} alt="Shakil Ahmed Photo" /> </div></div>
+                    <div className="cell large-6 medium-12 Flex-Center-Align"> <div className="First-Photo"><img src={BrickPhoto} alt="Shakil Ahmed" /> </div></div>
                     <div className="cell large-6 medium-12 Flex-Center-Align"> <p className="First-Para">I'm a 
                         self-taught programmer learned my craft utilizing plethora of resources
                         available online. Every new day I'm learning something, 
@@ -37,7 +37,7 @@ class About extends Component {
                         something to offer absolutely everyone, not only as a means but as its own end. I posses a deep enthusiasm for the intersection between philosophy and programming. While building and learning things,
                         a key principle I adhere to is “Understand, not imitate”.
                          </p></div>
-                    <div className="cell large-6 medium-12 Flex-Center-Align"><div className="Second-Photo"><img src={LakePhoto} alt="shakil ahmed photo" /></div></div>
+                    <div className="cell large-6 medium-12 Flex-Center-Align"><div className="Second-Photo"><img src={LakePhoto} alt="shakil Ahmed" /></div></div>
                     </div>
                     </div>
            

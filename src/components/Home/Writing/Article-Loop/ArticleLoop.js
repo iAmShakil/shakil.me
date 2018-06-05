@@ -13,8 +13,8 @@ class ArticleLoop extends Component{
     }
 
     formateDate(inputDate){
-        var inputDate = inputDate.split("T")[0].split("-");
-        var monthNumber = inputDate[1];
+        var inputDateFormatted = inputDate.split("T")[0].split("-");
+        var monthNumber = inputDateFormatted[1];
         var monthString;               
         switch(Number(monthNumber)){
             case 1:

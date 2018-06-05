@@ -65,8 +65,9 @@ span.Keyword {
     padding-top: 10px;
   }
 }
-@media screen and (max-width: 39em){
+
+@media screen and (max-width: 768px){
   h1{
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 }

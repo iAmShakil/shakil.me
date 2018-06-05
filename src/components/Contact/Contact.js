@@ -24,16 +24,16 @@ class Contact extends Component {
     handleChange = (event) => {
         const name = event.target.name;
         const value = event.target.checked? event.target.checked : event.target.value;
-        if(name == "name"){
+        if(name === "name"){
             this.setState({
                 name : value
             })
-        } else if(name == "email") {
+        } else if(name === "email") {
 
             this.setState({
                 email : value
             })
-        } else if(name == "message") {
+        } else if(name === "message") {
 
             this.setState({
                 message : value

@@ -59,13 +59,12 @@ class SingleWriting extends Component {
 
         }
         
-        return `${inputDate[2]} ${monthString} ${inputDate[0]}`;
+        return `${inputDateFormatted[2]} ${monthString} ${inputDateFormatted[0]}`;
     }
 
     componentDidMount(){
         axios(`https://blog.shakil.me/wp-json/wp/v2/posts?slug=${this.props.match.params.slug}`)
         .then((response) => {
-            console.log(response);
             const title = response.data["0"].title.rendered;
             const content = response.data["0"].content.rendered;
             const date = response.data["0"].modified;

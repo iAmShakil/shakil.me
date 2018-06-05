@@ -58,7 +58,7 @@ class ArticleLoop extends Component{
 
         }
         
-        return `${inputDate[2]} ${monthString} ${inputDate[0]}`;
+        return `${inputDateFormatted[2]} ${monthString} ${inputDateFormatted[0]}`;
     }
 
     componentDidMount(){

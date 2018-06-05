@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Header from './Header/Header';
-import Projects from './projects/Projects';
-import Writings from './Writings/Writings';
+import Writing from './Writing/Writing';
 
 class Home extends Component{
     componentWillMount() {
@@ -11,8 +10,7 @@ class Home extends Component{
         return(
             <div>
                 <Header />
-                {/* <Projects /> */}
-                <Writings/>
+                <Writing />
             </div>
         )
     }

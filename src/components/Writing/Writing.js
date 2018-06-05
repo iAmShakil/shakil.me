@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import FullWriting from '../Home/Writings/Writings';
-import './Writings.css';
+import FullWriting from '../Home/Writing/Writing';
+import './Writing.css';
 
 class Writings extends Component {
     componentWillMount() {

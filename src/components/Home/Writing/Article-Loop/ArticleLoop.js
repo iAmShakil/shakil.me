@@ -67,7 +67,6 @@ class ArticleLoop extends Component{
             this.setState({
                 postData: response.data,
             });
-            console.log(this.state.postData);
         })
         .catch((err) => {
             console.log(err);

@@ -51,7 +51,7 @@ class NavRight extends Component {
         <div className="Nav-Close-Icon" onClick={this.navCloseHandler} >X</div>
             <ul className="Nav-List" onClick={this.navCloseHandler}>
             <li><NavLink exact to="/">Home</NavLink></li>                        
-            <li><NavLink to="/blog">Writings</NavLink></li>
+            <li><NavLink to="/writing">Writing</NavLink></li>
             <li><NavLink to="/reading">Reading</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>

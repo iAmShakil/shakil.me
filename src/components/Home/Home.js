@@ -10,7 +10,7 @@ class Home extends Component{
         return(
             <div>
                 <Header />
-                <Writing />
+                {/* <Writing /> */}
             </div>
         )
     }

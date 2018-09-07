@@ -5,6 +5,7 @@ import github from '../images/social/github.svg';
 import linkedin from '../images/social/linkedin.svg';
 import mailer from '../images/social/minutemailer.svg';
 import wordpress from '../images/social/wordpress.svg';
+import quora from '../images/social/quora.svg';
 
 const FooterRight = () => {
     return (
@@ -17,6 +18,8 @@ const FooterRight = () => {
                 <li><a href="https://jashakil.wordpress.com" target="_blank" rel="noopener noreferrer"> <img src={wordpress} alt="wordpress" /> </a></li>                
 
                 <li><a href="https://twitter.com/maverickshak" target="_blank" rel="noopener noreferrer"> <img src={twitter} alt="twitter" /> </a></li>
+
+                <li><a href="https://www.quora.com/profile/Shakil-Ahmed-9" target="_blank" rel="noopener noreferrer"> <img src={quora} alt="Quora" /> </a> </li>
 
                 <li><a href="https://facebook.com/imskl" target="_blank" rel="noopener noreferrer"> <img src={fb} alt="facebook" /> </a> </li>
 

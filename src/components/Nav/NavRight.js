@@ -41,7 +41,6 @@ class NavRight extends Component {
         <div className="Nav-Right">
             <ul className="Nav-List">
             <li><NavLink exact to="/">Home</NavLink></li>            
-            {/* <li><NavLink to="/writing">Writing</NavLink></li> */}
             <li><a href="https://medium.com/@shakil" target="_blank" rel="nofollow">Blog</a></li>
             <li><NavLink to="/reading">Reading</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
@@ -51,8 +50,8 @@ class NavRight extends Component {
         <div className="Nav-Right-Mobile" style= { this.state.navRightStyle } >
         <div className="Nav-Close-Icon" onClick={this.navCloseHandler} >X</div>
             <ul className="Nav-List" onClick={this.navCloseHandler}>
-            <li><NavLink exact to="/">Home</NavLink></li>                        
-            <li><NavLink to="/writing">Writing</NavLink></li>
+            <li><NavLink exact to="/">Home</NavLink></li>
+            <li><a href="https://medium.com/@shakil" target="_blank" rel="nofollow">Blog</a></li>            
             <li><NavLink to="/reading">Reading</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>

@@ -10,12 +10,16 @@
     "react-ga": "^2.5.3",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
-    "xml-js": "^1.6.4"
+    "xml-js": "^1.6.4",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }

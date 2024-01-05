@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://shakil.me",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^1.6.4",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-ga": "^2.5.3",
